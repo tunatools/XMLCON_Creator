@@ -1,0 +1,73 @@
+#use exclude and null to allow all
+#use special Sensor "Not in use" instead od include null.
+#because SBE forces you to describe all available Channels.
+
+channels:
+  Channel 1:
+    type: include
+    values:
+    - TemperatureSensor
+  Channel 2:
+    type: include
+    values:
+    - ConductivitySensor
+  Channel 3:
+    type: include
+    values:
+    - PressureSensor
+  Channel 4:
+    type: include
+    values:
+    - TemperatureSensor
+    - ConductivitySensor
+    - PressureSensor
+    - NotInUse
+  Channel 5:
+    type: include
+    values:
+    - TemperatureSensor
+    - ConductivitySensor
+    - PressureSensor
+    - NotInUse
+  Channel 6:
+    type: include
+    values: NotInUse
+  Channel 7:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 8:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 9:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 10:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 11:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 12:
+    type: exclude
+    values:
+      - TemperatureSensor
+      - ConductivitySensor
+      - PressureSensor
+  Channel 13:
+      type: exclude
+      values: null
